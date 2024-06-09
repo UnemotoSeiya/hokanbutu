@@ -18,9 +18,6 @@
 - 保管物の点検作業をする時
 - 保管庫への保管物の登録、削除作業をする時
 
-## 実装機能リスト
-https://docs.google.com/spreadsheets/d/16tu6wkhUkx4zVgMidhInNdTH4bJfF0NC5XVIZ9xnqvQ/edit?usp=sharing
-
 ## 設計書
 後ほど作成予定
 ​
