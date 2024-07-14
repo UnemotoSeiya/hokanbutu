@@ -1,0 +1,2 @@
+class StoredItem < ApplicationRecord
+end

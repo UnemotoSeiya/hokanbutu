@@ -1,0 +1,17 @@
+<h1>新規保管物登録</h1>
+
+<%= form_with model: StoredItem.new do |f| %>
+  <h4>名称</h4>
+  <%= f.text_field :name%>
+	
+  <h4>詳細</h4>
+  <%= f.text_area :explanation%>
+  
+  <h4>個数</h4>
+  <%= f.text_field :quantity%>
+	
+  <h4>保管場所</h4>
+  <%= f.select :place,[["保管場所A","保管場所A"],["保管場所B","保管場所B"],["保管場所C","保管場所C"],["保管場所D","保管場所D"]]%>
+	
+  <%= f.submit '登録' %>
+<% end %>

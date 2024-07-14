@@ -1,0 +1,13 @@
+<h1>保管物詳細</h1>
+<div>
+  <h4>保管物名称</h4>
+  <p><%= @stored_item.name %></p>
+  <h4>説明</h4>
+  <p><%= @stored_item.explanation %></p>
+  <h4>個数</h4>
+  <p><%= @stored_item.quantity %></p>
+  <h4>保管場所</h4>
+  <p><%= @stored_item.place %></p>
+  <%= link_to "一覧画面へ", stored_items_path %>
+  <%= link_to "編集", edit_stored_item_path(@stored_item) %>
+</div>

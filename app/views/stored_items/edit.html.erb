@@ -1,0 +1,20 @@
+<h1>登録内容編集</h1>
+<%= form_with model: @stored_item do |f| %>
+
+  <h4>保管物名称</h4>
+  <%= f.text_field :name %>
+  
+  <h4>説明</h4>
+  <%= f.text_area :explanation %>
+  
+  <h4>個数</h4>
+  <%= f.text_field :quantity %>
+  
+  <h4>保管場所</h4>
+  <%= f.select :place,[["保管場所A","保管場所A"],["保管場所B","保管場所B"],["保管場所C","保管場所C"],["保管場所D","保管場所D"]]%>
+  
+  <div><%= f.submit '保存' %></div>
+  
+  <%= button_to "詳細画面へ", stored_item_path(@stored_item), method: :get %>
+  <%= button_to "削除", stored_item_path(@stored_item), method: :delete, data: { confirm: "本当に削除しますか？" } %>
+<% end %>

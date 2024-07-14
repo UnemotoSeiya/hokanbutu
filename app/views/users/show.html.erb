@@ -1,0 +1,13 @@
+<h1>ユーザー情報</h1>
+<div>
+  <%= image_tag @user.get_profile_image(100,100) %>
+  <h4>氏名</h4>
+  <p><%= @user.name %></p>
+  <h4>従業員番号</h4>
+  <p><%= @user.number %></p>
+  <h4>電話番号</h4>
+  <p><%= @user.telephone_number %></p>
+  <h4>メールアドレス</h4>
+  <p><%= @user.email %></p>
+  <%= link_to "編集", edit_user_path(@user) %>
+</div>

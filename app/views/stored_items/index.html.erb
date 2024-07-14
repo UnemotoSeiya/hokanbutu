@@ -1,0 +1,19 @@
+<h1>保管物一覧</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>名称</th>
+      <th>個数</th>
+      <th>保管場所</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @stored_items.each do |stored_item| %>
+      <tr>
+        <td><a href="/stored_items/<%= stored_item.id %>"><%= stored_item.name %></a></td>
+        <td><%= stored_item.quantity %></td>
+        <td><%= stored_item.place %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
